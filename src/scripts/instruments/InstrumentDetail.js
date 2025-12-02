@@ -1,9 +1,15 @@
-import { getInstrument } from "../data/InstrumentsStateManager.js"
+import { getInstrument, getLoading } from "../data/InstrumentsStateManager.js"
 import { getURLParameter } from "../data/ViewStateManager.js"
+import { LoadingSpinner } from "../LoadingSpinner.js"
 
 export const InstrumentDetail = () => {
     const instrumentId = getURLParameter("instrumentId")
     const instrument = getInstrument(parseInt(instrumentId))
+    const isLoading = getLoading()
+
+    if (isLoading || !instrument.hasOwnProperty("id")) { // Check for isLoading or if instrument data is not yet available
+        return LoadingSpinner()
+    }
 
     return `
         <section class="instrument instrument--details" id="instrument--${instrument.id}">

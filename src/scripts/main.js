@@ -17,13 +17,7 @@ const container = document.querySelector("#content")
 */
 const renderAllStateAsHTML = () => {
     if (isAuthenticated()) {
-        fetchAllInstruments()
-            .then(fetchAllInstrumentTypes)
-            .then(fetchAllClasses)
-            .then(fetchUs)
-            .then(() => {
-                container.innerHTML = DukeChord()
-            })
+        container.innerHTML = DukeChord()
     }
     else {
         const view = getURLParameter("view")
@@ -47,6 +41,17 @@ window.addEventListener('popstate', function (event) {
     container.dispatchEvent(new CustomEvent("stateChanged"))
 });
 
-// Initial render of header and view on page load
+// Initial render of header
 header.innerHTML = Header()
-renderAllStateAsHTML()
+
+// New function to handle initial data fetch and render
+const fetchAndRender = async () => {
+    await fetchAllInstruments()
+    await fetchAllInstrumentTypes()
+    await fetchAllClasses()
+    await fetchUs()
+    renderAllStateAsHTML()
+}
+
+// Initial application bootstrap
+fetchAndRender()

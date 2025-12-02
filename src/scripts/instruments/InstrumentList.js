@@ -1,7 +1,8 @@
-import { getInstruments, setInstrument, shouldPlaySounds } from "../data/InstrumentsStateManager.js"
+import { getInstruments, shouldPlaySounds, getLoading } from "../data/InstrumentsStateManager.js"
 import { changeView } from "../data/ViewStateManager.js"
 import { Instrument } from "./Instrument.js"
 import { Options } from "./Options.js"
+import { LoadingSpinner } from "../LoadingSpinner.js"
 
 const container = document.querySelector("#content")
 let audio = null
@@ -9,7 +10,7 @@ let audio = null
 container.addEventListener(
     "click",
     (pointerEvent) => {
-        const instrumentClicked = pointerEvent.path.find(element => element.classList?.contains("instrument"))
+        const instrumentClicked = pointerEvent.target.closest(".instrument")
         if (instrumentClicked) {
             const [, id] = pointerEvent.target.id.split("--")
             changeView(`instrument&instrumentId=${id}`)
@@ -49,6 +50,11 @@ container.addEventListener(
 
 export const InstrumentList = () => {
     const instruments = getInstruments()
+    const isLoading = getLoading()
+
+    if (isLoading) {
+        return LoadingSpinner()
+    }
 
     return `
         <h2 class="header--centered header--sale">Instruments for Sale</h2>

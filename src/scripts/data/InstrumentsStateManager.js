@@ -5,7 +5,8 @@ const state = {
     instrumentTypes: [],
     chosenInstrument: 0,
     playSounds: false,
-    filter: ""
+    filter: "",
+    isLoading: false
 }
 
 const container = document.querySelector("#content")
@@ -44,6 +45,16 @@ export const shouldPlaySounds = () => {
     return state.playSounds
 }
 
+export const setLoading = (status) => {
+    state.isLoading = status
+    container.dispatchEvent( new CustomEvent("stateChanged") )
+}
+
+export const getLoading = () => {
+    return state.isLoading
+}
+
+
 export const saveInstrument = (instrument) => {
     return fetch(`${settings.apiURL}/api/instruments`, {
         method: "POST",
@@ -60,19 +71,25 @@ export const saveInstrument = (instrument) => {
 }
 
 export const fetchAllInstruments = () => {
+    setLoading(true)
     return fetch(`${settings.apiURL}/api/instruments?_expand=instrumentType&_expand=user`)
         .then(response => response.json())
         .then(
             (instrumentsArray) => {
                 state.instruments = instrumentsArray
+                setLoading(false)
             }
         )
 }
 
 export const fetchAllInstrumentTypes = () => {
+    setLoading(true)
     return fetch(`${settings.apiURL}/api/instrumentTypes`)
         .then(response => response.json())
-        .then( typeArray  => state.instrumentTypes = typeArray )
+        .then( typeArray  => {
+            state.instrumentTypes = typeArray
+            setLoading(false)
+        })
 }
 
 export const getInstrumentTypes = () => {
