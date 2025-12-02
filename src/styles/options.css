@@ -1,0 +1,30 @@
+.options {
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.option {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.filter {
+    text-align: center;
+}
+
+.filter__description {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#options > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

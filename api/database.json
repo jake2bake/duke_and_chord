@@ -1,0 +1,308 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "title": "How to Use Multiple Drum Sets",
+      "capacity": 10,
+      "musicianId": 1,
+      "start": "2023-03-01",
+      "end": "2023-03-13",
+      "price": 449.25,
+      "description": "Voluptatibus ex at repudiandae delectus nostrum veritatis omnis doloremque ipsa. Quis nihil sequi vitae exercitationem. Eos facere facilis neque iste ut rerum. Quasi cum voluptatem rerum reprehenderit consequatur ad. Nostrum reprehenderit rem alias placeat repudiandae tempora assumenda non. Atque consequatur iusto. Suscipit aperiam minus sequi consectetur. Et qui deserunt non et qui alias. Eos assumenda aut voluptas. Quis voluptatem sunt et sed laboriosam adipisci saepe consequatur. Deleniti dolor cum quisquam et assumenda qui iste temporibus. Maiores iure veniam nemo eum sed non libero delectus qui. Eum et qui quisquam commodi exercitationem voluptas aperiam. Omnis corrupti et minima et eius quod temporibus inventore. Laboriosam aut similique et. Eius ut similique aut ut rerum explicabo voluptatum. Dicta dolorem eum similique ut commodi quibusdam odio voluptatibus."
+    },
+    {
+      "id": 2,
+      "title": "Different String Configurations for Rock and Jazz",
+      "capacity": 10,
+      "musicianId": 2,
+      "start": "2023-02-22",
+      "end": "2023-02-25",
+      "price": 304.99,
+      "description": "Et in non pariatur dolorem mollitia eos delectus et libero. Consequuntur id culpa pariatur voluptatem incidunt repellat et officiis aut. Dolor eos eligendi impedit doloremque quas eius deleniti. Incidunt quae placeat unde in. Praesentium aut reiciendis nam sint eum repellat. Cupiditate et doloremque dicta amet voluptatum est sint sequi asperiores. Eum eaque ipsa rerum numquam quae autem. Sed maiores expedita. Excepturi libero minus. Quo occaecati nostrum voluptatem quo voluptatibus veniam alias qui inventore. Quam expedita molestiae corrupti est enim enim harum libero. Qui fugiat voluptatem quaerat accusantium quasi totam occaecati et. Occaecati perspiciatis nesciunt earum ipsum quisquam est. Neque necessitatibus praesentium perspiciatis necessitatibus ut quod voluptatem eligendi quis. Voluptate possimus vero quae magni ea minus. Ut repudiandae asperiores provident et laudantium sit officiis."
+    },
+    {
+      "id": 3,
+      "title": "Master your breathing for playing the tenor saxophone",
+      "capacity": 5,
+      "musicianId": 4,
+      "start": "2021-02-22",
+      "end": "2021-02-25",
+      "price": 1325,
+      "description": "Animi saepe facilis cumque sed dolorum est recusandae eligendi enim. Fugiat rerum consequatur et est libero corrupti sapiente. Illo facilis dolor quibusdam laboriosam. Aliquid qui repellat et est itaque. Tenetur odio consequatur nam aut et sapiente qui quia. Consequatur ut et laboriosam esse commodi accusamus nesciunt earum vel. Laudantium voluptatem atque tempora harum aut blanditiis libero enim dolorem. Distinctio cupiditate id omnis fuga aut fugiat aut excepturi sapiente. Fuga minima velit. Praesentium quasi ut fugit ipsa. Sunt occaecati cum laboriosam doloribus. Non vel exercitationem ut impedit iste. Voluptatem voluptas magni voluptas iure tenetur ipsam maiores consequuntur. Nihil autem reprehenderit at cupiditate veritatis rerum. Accusantium voluptates quia asperiores aut. Qui ipsum dicta eos dolores nulla magnam sequi. Perferendis ad sapiente. Reiciendis corrupti quibusdam similique."
+    }
+  ],
+  "musicians": [
+    {
+      "id": 1,
+      "name": "Crystal Elsey",
+      "instrumentTypeId": 3
+    },
+    {
+      "id": 2,
+      "name": "Micah Wells",
+      "instrumentTypeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Delaine Wendling",
+      "instrumentTypeId": 2
+    },
+    {
+      "id": 4,
+      "name": "Elizabeth Sanger",
+      "instrumentTypeId": 1
+    },
+    {
+      "id": 5,
+      "name": "Blaise Roberts",
+      "instrumentTypeId": 1
+    },
+    {
+      "id": 6,
+      "name": "James Tonkin",
+      "instrumentTypeId": 2
+    }
+  ],
+  "instrumentTypes": [
+    {
+      "id": 1,
+      "name": "Wind"
+    },
+    {
+      "id": 2,
+      "name": "String"
+    },
+    {
+      "id": 3,
+      "name": "Percussion"
+    }
+  ],
+  "instruments": [
+    {
+      "id": 1,
+      "fileName": "baritone.jpeg",
+      "name": "Baritone",
+      "instrumentTypeId": 1,
+      "audio": "baritone.mp3",
+      "used": false,
+      "price": 593.24,
+      "description": "Error officia a. Tenetur odio aut sit. Qui reiciendis unde maxime aut vitae praesentium.",
+      "userId": 8
+    },
+    {
+      "id": 2,
+      "fileName": "violin.jpeg",
+      "name": "Snakewood Violin",
+      "instrumentTypeId": 2,
+      "audio": "violin.mp3",
+      "used": false,
+      "price": 178.15,
+      "description": "Perferendis sunt illo blanditiis est ut libero. Nostrum sed aperiam qui aut. Cupiditate dolorem molestias sint occaecati vel autem enim voluptas voluptates. Ullam voluptatum quibusdam fuga corporis vel et.",
+      "userId": 3
+    },
+    {
+      "id": 3,
+      "fileName": "triangle.jpeg",
+      "name": "Triangle des trois métaux",
+      "instrumentTypeId": 3,
+      "audio": "triangle.wav",
+      "used": false,
+      "price": 177.94,
+      "description": "Sed cupiditate perspiciatis ad qui tempora facilis placeat. Officiis consectetur est laborum. Recusandae facilis optio voluptate laboriosam nobis officiis.",
+      "userId": 9
+    },
+    {
+      "id": 4,
+      "fileName": "clarinet.jpeg",
+      "name": "Clarinet alà Arndale",
+      "instrumentTypeId": 1,
+      "audio": "CLARINET.wav",
+      "used": false,
+      "price": 845.26,
+      "description": "Et eveniet nisi velit. Sit enim inventore similique nemo quia aliquid blanditiis consequatur. Delectus in fugit doloribus aut. Praesentium dignissimos nihil fugit molestias totam perferendis quia voluptate dicta.",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "fileName": "trombone.jpeg",
+      "name": "Trombone",
+      "instrumentTypeId": 1,
+      "audio": "trombone.mp3",
+      "used": false,
+      "price": 968.98,
+      "description": "Dolor rerum quaerat eum ullam. Sit placeat ut fugiat ea suscipit rerum. Et laboriosam non labore sit quis aut laboriosam ullam. Illo esse iste unde sint esse consequatur ipsam ut. Et harum maiores rem suscipit dolores.",
+      "userId": 11
+    },
+    {
+      "id": 6,
+      "fileName": "guitar.jpeg",
+      "name": "Guitar",
+      "instrumentTypeId": 2,
+      "audio": "Acoustic_Guitar.wav",
+      "used": false,
+      "price": 773.53,
+      "description": "Doloribus a ipsam. Aliquam ea quae nostrum eos. Doloribus reprehenderit eum quo suscipit quia ducimus cum voluptatem suscipit. Minus vel sunt dolorem et vitae quis quisquam.",
+      "userId": 15
+    },
+    {
+      "id": 7,
+      "fileName": "handDrum.jpeg",
+      "name": "Drum",
+      "instrumentTypeId": 3,
+      "audio": "bongo.wav",
+      "used": false,
+      "price": 458.42,
+      "description": "Dolor est sint. Eveniet aut voluptates qui quia totam quaerat quia ipsum. Sit necessitatibus non maiores ipsum porro mollitia nostrum.",
+      "userId": 7
+    },
+    {
+      "id": 8,
+      "fileName": "harp.jpeg",
+      "name": "Harp of Discord",
+      "instrumentTypeId": 2,
+      "audio": "harp.wav",
+      "used": false,
+      "price": 464.19,
+      "description": "Nihil sunt laborum accusantium. Expedita ducimus in atque maxime quia id excepturi voluptatum. Ut repudiandae repudiandae facilis.",
+      "userId": 2
+    },
+    {
+      "id": 9,
+      "fileName": "trumpet.jpeg",
+      "name": "Jazz Trumpet",
+      "instrumentTypeId": 1,
+      "audio": "TRUMPET.wav",
+      "used": false,
+      "price": 58,
+      "description": "Consectetur doloribus commodi. Et laboriosam repellendus quia. Quaerat repellat nostrum ut eos eum.",
+      "userId": 8
+    },
+    {
+      "id": 10,
+      "fileName": "sax.jpeg",
+      "name": "Saxophone",
+      "instrumentTypeId": 1,
+      "audio": "SAX.wav",
+      "used": false,
+      "price": 132,
+      "description": "Ducimus natus facere eos quis voluptatem nam est. Placeat in et doloremque dolore. Ipsum beatae id atque rem rem.",
+      "userId": 20
+    },
+    {
+      "fileName": "oboe.jpeg",
+      "name": "Oboe",
+      "instrumentTypeId": 1,
+      "audio": "oops.wav",
+      "used": false,
+      "price": 85,
+      "description": "Magnam ipsam atque et perspiciatis earum sapiente dolorem.",
+      "userId": 4,
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jessica Younker",
+      "email": "jessica@younker.com"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson",
+      "email": "jordan@nelson.com"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc",
+      "email": "zoe@leblanc.com"
+    },
+    {
+      "name": "Meg Ducharme",
+      "email": "meg@ducharme.com",
+      "id": 4
+    },
+    {
+      "name": "Hannah Hall",
+      "email": "hannah@hall.com",
+      "id": 5
+    },
+    {
+      "name": "Emily Lemmon",
+      "email": "emily@lemmon.com",
+      "id": 6
+    },
+    {
+      "name": "Jordan Castelloe",
+      "email": "jordan@castelloe.com",
+      "id": 7
+    },
+    {
+      "name": "Leah Gwin",
+      "email": "leah@gwin.com",
+      "id": 8
+    },
+    {
+      "name": "Caitlin Stein",
+      "email": "caitlin@stein.com",
+      "id": 9
+    },
+    {
+      "name": "Greg Korte",
+      "email": "greg@korte.com",
+      "id": 10
+    },
+    {
+      "name": "Charisse Lambert",
+      "email": "charisse@lambert.com",
+      "id": 11
+    },
+    {
+      "name": "Madi Peper",
+      "email": "madi@peper.com",
+      "id": 12
+    },
+    {
+      "name": "Jenna Solis",
+      "email": "jenna@solis.com",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "name": "Ryan Tanay",
+      "email": "ryan@tanay.com"
+    },
+    {
+      "id": 16,
+      "name": "Emma Beaton",
+      "email": "emma@beaton.com"
+    },
+    {
+      "id": 17,
+      "name": "Dani Adkins",
+      "email": "dani.adkins.com"
+    },
+    {
+      "id": 18,
+      "name": "Adam Oswalt",
+      "email": "adam@oswalt.com"
+    },
+    {
+      "id": 19,
+      "name": "Fletcher Bangs",
+      "email": "flangs@bangs.com"
+    },
+    {
+      "id": 20,
+      "name": "Angela Lee",
+      "email": "lee@lee.com"
+    },
+    {
+      "name": "Me Myself",
+      "email": "me@me.com",
+      "id": 21
+    }
+  ],
+  "signups": [],
+  "shoppingCart": [],
+  "shoppingCartItems": []
+}

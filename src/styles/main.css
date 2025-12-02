@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url("./serfs.css");
+@import url("./switch.css");
+@import url("./nav.css");
+@import url("./class.css");
+@import url("./home.css");
+@import url("./instruments.css");
+@import url("./options.css");
+@import url("./instrumentDetail.css");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Crimson Pro', serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: 2px;
+}
+
+main h2 {
+    font-size: 3em;
+}
+
+hr {
+	border: 1px solid rgb(138, 121, 121);
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#header {
+    line-height: 0.9;
+}
+
+.title--name {
+    cursor: pointer;
+	text-align: center;
+	font-size: 3.75em;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding: 0;
+}
+
+.title--icon {
+	padding: 0;
+	text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 6rem;
+}
+
+.loginForm, .loginForm input {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 0 15%;
+    align-items: center;
+}
+
+.register {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#loginButton {
+    font-size: 1.25rem;
+    width: 10rem;
+    margin: 1rem 0 0 0;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    33% {
+        transform: rotate(1deg) scale(1.0);
+        opacity: 0.75;
+    }
+    66% {
+        transform: rotate(-1deg) scale(1.0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}

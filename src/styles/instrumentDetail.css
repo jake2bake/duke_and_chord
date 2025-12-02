@@ -1,0 +1,19 @@
+.instrument--details:hover {
+    cursor: default;
+    animation: none;
+    box-shadow: none;
+}
+
+.instrument__image--detail {
+    max-width: 20rem;
+    max-height: 12rem;
+}
+
+.instrument__seller--detail {
+    opacity: 1;
+}
+
+.instrument__price--detail {
+    font-size: xx-large;
+    text-align: center;
+}

@@ -1,0 +1,120 @@
+.instruments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.instrument {
+    flex-basis: 16%;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 3rem 0 0 0;
+}
+
+.instrument--mini {
+    padding: 1rem 0 0 0;
+    margin: 0 2rem;
+}
+
+.instrument:hover > .instrument__seller {
+    display: block;
+    opacity: 1;
+    transition: .66s all ease;
+}
+
+.instrument:hover {
+    cursor: pointer;
+    animation: jiggle 0.2s;
+    transition: .4s all ease;
+    z-index: 11;
+    box-shadow: 5px 15px 20px rgba(230, 230, 230, 0.4)
+}
+
+.instrument--mini:hover {
+    cursor: pointer;
+    animation: jiggle 0.2s;
+    transition: .4s all ease;
+    z-index: 11;
+}
+
+.header--centered {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header--sale {
+    font-size: 2.25rem;
+}
+
+.instrument__name {
+    margin-top: auto;
+    padding: 3rem 0 0 0;
+    font-size: 1.4rem;
+    pointer-events: none;
+}
+
+.instrument__type {
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.instrument__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10rem;
+    max-height: 6rem;
+    padding: 1rem 0 0 0;
+    pointer-events: none;
+}
+
+.instrument__seller {
+    opacity: 0;
+    color:rgb(40, 40, 40);
+    margin-top: auto;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.instrument__price--mini {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.instrument__price {
+    font-size: larger;
+}
+
+.newInstrument {
+    margin: 0 25%;
+    font-size: 1.25rem;
+}
+
+
+.newInstrument__field {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.prompt {
+    flex: 1;
+}
+
+#newInstrument__submit, #newInstrument__cancel {
+    font-size: 1.25rem;
+}
+
+.newInstrument__input {
+    flex: 3;
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.newInstrument__description {
+    width: 100%;
+    height: 5em;
+}

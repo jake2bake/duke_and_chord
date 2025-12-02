@@ -1,0 +1,55 @@
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.classes--mini {
+    display: block;
+}
+
+.class {
+    flex-basis: 40%;
+    margin: 2rem;
+    font-size: 1.2rem;
+    border: 1px dotted lightskyblue;
+    padding: 1rem;
+}
+
+.class--mini {
+    margin: 2rem 0;
+}
+
+.class__price {
+    font-size: larger;
+    color: rgb(193, 51, 51);
+}
+
+.class__description {
+    padding: 1rem;
+}
+
+.class__price--mini {
+    font-size: inherit;
+
+}
+
+.class__title {
+    font-size: 1.5rem;
+}
+
+.class__title--mini {
+    font-size: 1.25rem;
+}
+
+.class__date {
+    padding: 2rem 0 0 0;
+}
+
+.class__date--mini {
+    font-size: 1rem;
+}
+
+.class__date::before {
+    content: "🗓"
+}
