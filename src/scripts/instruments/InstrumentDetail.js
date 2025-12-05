@@ -19,7 +19,7 @@ export const InstrumentDetail = () => {
                     { style: 'currency', currency: 'USD' }
                 )}
             </div>
-            <img class="instrument__image instrument__image--detail" src="/images/${instrument.fileName}" />
+            <img class="instrument__image instrument__image--detail" src="/images/${instrument.fileName ? instrument.fileName : 'dukechord.jpeg'}" />
             <h3 class="header--centered instrument__name">${instrument.name}</h3>
             <h4 class="header--centered instrument__type">(${instrument.instrumentType.name})</h4>
 
