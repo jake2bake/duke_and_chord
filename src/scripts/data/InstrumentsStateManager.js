@@ -6,7 +6,8 @@ const state = {
     chosenInstrument: 0,
     playSounds: false,
     filter: "",
-    isLoading: false
+    isLoading: false,
+    _transientInstrumentFormState: {}
 }
 
 const container = document.querySelector("#content")
@@ -52,6 +53,18 @@ export const setLoading = (status) => {
 
 export const getLoading = () => {
     return state.isLoading
+}
+
+export const getTransientInstrumentFormState = () => {
+    return structuredClone(state._transientInstrumentFormState)
+}
+
+export const setTransientInstrumentFormState = (key, value) => {
+    state._transientInstrumentFormState[key] = value
+}
+
+export const clearTransientInstrumentFormState = () => {
+    state._transientInstrumentFormState = {}
 }
 
 

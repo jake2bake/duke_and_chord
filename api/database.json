@@ -198,6 +198,17 @@
       "description": "Magnam ipsam atque et perspiciatis earum sapiente dolorem.",
       "userId": 4,
       "id": 11
+    },
+    {
+      "fileName": "",
+      "name": "Guitar",
+      "instrumentTypeId": 2,
+      "audio": "",
+      "used": true,
+      "price": 500,
+      "description": "",
+      "userId": 4,
+      "id": 12
     }
   ],
   "users": [
