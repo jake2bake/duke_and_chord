@@ -209,6 +209,14 @@
       "description": "",
       "userId": 4,
       "id": 12
+    },
+    {
+      "name": "Mandolin",
+      "instrumentTypeId": 2,
+      "price": 300,
+      "used": true,
+      "userId": 4,
+      "id": 13
     }
   ],
   "users": [

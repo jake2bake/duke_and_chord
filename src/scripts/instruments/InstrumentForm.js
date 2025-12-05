@@ -5,7 +5,21 @@ const content = document.querySelector("#content")
 
 content.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "newInstrument__submit") {
-        saveInstrument(formState)
+        const transientState = getTransientInstrumentFormState()
+
+        if (transientState.instrumentTypeId === 0) {
+            window.alert("Please select an instrument type.")
+            return
+        }
+
+        const currentUser = getCurrentUser()
+        if (!currentUser || typeof currentUser.id !== 'number' || currentUser.id <= 0) {
+            window.alert("You must be logged in to submit an instrument.")
+            return
+        }
+
+        transientState.userId = currentUser.id
+        saveInstrument(transientState)
         clearTransientInstrumentFormState()
     } else if (clickEvent.target.id === "newInstrument__cancel") {
         clearTransientInstrumentFormState()
@@ -43,6 +57,7 @@ const checkForStateChange = (evt) => {
 
         setTransientInstrumentFormState(evt.target.id, value)
         console.log("Transient Form State:", getTransientInstrumentFormState())
+        content.dispatchEvent(new CustomEvent("stateChanged"))
     }
 }
 
@@ -66,8 +81,7 @@ export const InstrumentForm = () => {
             "audio": "",
             "used": false,
             "price": 0,
-            "description": "",
-            "userId": getCurrentUser().id
+            "description": ""
         }
     }
 
